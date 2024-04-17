@@ -45,22 +45,22 @@
      <p id="halo" class="halo"></p>
      
      <div><blockquote id='bq' data-text='💞'>
-       <p id="kalimat">Hôm nay anh ở đây muốn nói với em một điều nhỏ nhoyy hoyy 👉👈</p>
+       <p id="kalimat">hôm nay anh chỉ muốn nói là.........</p>
 
        <!-- Pesan -->
-       <p id="pesan1">Chạm đủ 4 love nhoo  ❤️</p>
+       <p id="pesan1">Em chạm đủ 4 con khỉ nhé 🤭</p>
        <div id="kolombaru">
-         <li id="lv1"> ❤️</li>
-         <li id="lv2"> ❤️</li>
-         <li id="lv3"> ❤️</li>
-         <li id="lv4"> ❤️</li>
+         <li id="lv1"> 🙈</li>
+         <li id="lv2"> 🙊</li>
+         <li id="lv3"> 🙉</li>
+         <li id="lv4"> 🙈</li>
        </div>
 
-       <p id="pesan2">Tuỵt zờiiiii! 💘</p>
+       <p id="pesan2">Uki xong roàii</p>
        <p id="pesan3">Anh muốn nóiii với em là là là.....</p>
-       <p id="pesan4" class="sty2">Anh iuu emmm nhìu lắmmm lắm nhunnn</p>
-       <p id="pesan5" class="sty2">hong biết aiii đó có nhớ anhhh khonnggg hàaaaa</p>
-       <p id="pesan6" class="sty2">Còn anhh trong đầuuu bây giờ chỉ có hình póngg dáng em thoaii🤧</p>
+       <p id="pesan4" class="sty2">Đầu tiên cho anh xin lỗi về những chuyện mà anh đã gây ra </p>
+       <p id="pesan5" class="sty2">Anh chỉ nhắc nhở em là "Đẹp gái làm ơn đừng có buồn"</p>
+       <p id="pesan6" class="sty2">Đôi khi có những chuyện không theo như ý của mình thì mong em hãy cứ phải vui vẻ lạc quan lên nhé, đây cũng là thời điểm quan trọng nên em hãy nhớ chú ý sức khỏe của mình nữa nha đừng để cho cơ thể em quá tải</p>
 
        <!-- Tombol Lanjut -->
        <p id="opsL">Tiếp nàaaaa bbii</p>
@@ -72,7 +72,7 @@
      <!-- Pesan Ditolak -->
      <div id="pesanditolak">
        <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
-       <p id="kataditolak">Bộ em thích từ chối lắm hả ? Nhưng mà em bị lừa rồiii cục cưng 😆</p>
+       <p id="kataditolak">Không giỡn nha, nhma thoi ko sao em vô được đây là anh vui vl rồi 😊, còn em thì...có qà nhé.</p>
      </div>
 
    </div>
@@ -84,11 +84,11 @@
   
   async function inipesan(){
     var { value: nama } = await swals.fire({
-           title: 'Tên của bé iuu là gì?', input: 'text',
+           title: 'PVy nhập tên của mình đi nào', input: 'text',
        });
        if(nama && nama.length < 11){
          window.nama = nama;
-         vketikhalo="Hai, " + nama + " 💑";
+         vketikhalo="Anh rất chào em, " + nama + " 💑";
          mulainama();
          } else {
            await swals.fire('Bộ em hong có tên hả!', 'Tên của người đẹp chỉ chứa 10 ký tự hoii nhaaa, ya!');inipesan();
@@ -96,10 +96,10 @@
   }
 
   
-  var tanya = 'có rảnh hongg nói chuyện với anh chút nhéee 😳';
-  var opstanya = 'Lựa chọn của em là......';
-  var tompositif = 'Em đồng ý';
-  var tomnegatif = 'Em hong chịu';
+  var tanya = 'Không biết là em hết giận chưa nhma ko nhắn tin với elm anh ko chịu được 🫢';
+  var opstanya = 'Giờ anh hỏi lại nhé: Em vui lên chưa 😁';
+  var tompositif = 'Em vui lại roiii';
+  var tomnegatif = 'Em vui không nổi';
   
   async function pertanyaan(){var { isConfirmed: prtanya } = await swals.fire({title: nama + ' ' + tanya, text: '' + opstanya, imageUrl: '' + fotostiker5.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif,});
     if(prtanya){
